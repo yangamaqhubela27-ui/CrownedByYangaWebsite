@@ -105,3 +105,33 @@ img {
 .btn:hover {
     background-color: #b8962e;
 }
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.service-card {
+    background-color: #fff5f7;
+    border: 1px solid #d4af37;
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.service-card h3 {
+    color: #d63384;
+    margin-bottom: 10px;
+}
+
+.service-card strong {
+    color: #b8962e;
+}
+
+@media screen and (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}
