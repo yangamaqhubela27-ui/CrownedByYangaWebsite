@@ -68,3 +68,40 @@ img {
         margin: 10px 0;
     }
 }
+
+.hero {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../images/hero.jpeg");
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    padding: 30px;
+}
+
+.logo {
+    width: 140px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #d4af37;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    background-color: #b8962e;
+}
