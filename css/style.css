@@ -231,3 +231,28 @@ img {
 .social-icons a:hover {
     background-color: #cc4c8c;
 }
+
+.gallery-card {
+    background-color: white;
+    border: 2px solid #d4af37;
+    border-radius: 15px;
+    padding: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.gallery-card h3 {
+    color: #cc4c8c;
+    margin-top: 10px;
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.gallery-card:hover {
+    transform: translateY(-5px);
+}
