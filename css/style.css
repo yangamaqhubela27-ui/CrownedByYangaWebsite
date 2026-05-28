@@ -135,3 +135,23 @@ img {
         grid-template-columns: 1fr;
     }
 }
+
+.booking-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.booking-section h2 {
+    color: #cc4c8c;
+    margin-bottom: 15px;
+}
+
+.booking-card {
+    background-color: #fff;
+    border: 2px solid #d4af37;
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 500px;
+    margin: 30px auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
