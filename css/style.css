@@ -70,7 +70,7 @@ img {
 }
 
 .hero {
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../images/hero.jpeg");
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("images/hero.jpeg");
     background-size: cover;
     background-position: center;
     min-height: 400px;
