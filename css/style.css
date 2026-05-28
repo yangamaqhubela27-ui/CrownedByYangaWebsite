@@ -216,3 +216,18 @@ img {
     color: #cc4c8c;
     margin-bottom: 15px;
 }
+
+.social-icons a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 18px;
+    background-color: #d4af37;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.social-icons a:hover {
+    background-color: #cc4c8c;
+}
