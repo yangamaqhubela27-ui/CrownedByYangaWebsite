@@ -307,3 +307,20 @@ img {
     font-weight: bold;
     color: green;
 }
+
+.map-section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.map-section h3 {
+    color: #cc4c8c;
+    margin-bottom: 10px;
+}
+
+.map-section iframe {
+    border-radius: 15px;
+    border: 2px solid #d4af37;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
