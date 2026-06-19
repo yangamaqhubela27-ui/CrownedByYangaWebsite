@@ -24,3 +24,18 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 });
+const contactForm = document.getElementById("contactForm");
+
+if (contactForm) {
+    contactForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const name = document.getElementById("contactName").value;
+        const type = document.getElementById("messageType").value;
+
+        document.getElementById("contactResponse").innerHTML =
+            `Thank you, ${name}! Your ${type.toLowerCase()} has been sent successfully.`;
+
+        contactForm.reset();
+    });
+}
