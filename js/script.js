@@ -39,3 +39,22 @@ if (contactForm) {
         contactForm.reset();
     });
 }
+
+const serviceSearch = document.getElementById("serviceSearch");
+
+if (serviceSearch) {
+    serviceSearch.addEventListener("keyup", function () {
+        const searchText = serviceSearch.value.toLowerCase();
+        const serviceCards = document.querySelectorAll(".service-card");
+
+        serviceCards.forEach(function (card) {
+            const cardText = card.textContent.toLowerCase();
+
+            if (cardText.includes(searchText)) {
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
+        });
+    });
+}
