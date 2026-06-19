@@ -58,3 +58,21 @@ if (serviceSearch) {
         });
     });
 }
+
+const galleryImages = document.querySelectorAll(".gallery-grid img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightboxImage");
+const closeLightbox = document.getElementById("closeLightbox");
+
+if (galleryImages && lightbox && lightboxImage && closeLightbox) {
+    galleryImages.forEach(function (image) {
+        image.addEventListener("click", function () {
+            lightbox.style.display = "block";
+            lightboxImage.src = image.src;
+        });
+    });
+
+    closeLightbox.addEventListener("click", function () {
+        lightbox.style.display = "none";
+    });
+}
