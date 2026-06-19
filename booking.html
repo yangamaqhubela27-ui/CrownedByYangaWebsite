@@ -20,29 +20,47 @@
         <a href="contact.html">Contact</a>
     </nav>
 </header> 
+
     <main>
 
 <section class="booking-section">
+    <h2>Book Your Appointment</h2>
+    <p>Complete the form below to enquire about a hairstyle booking.</p>
 
-<h2>Book Your Appointment</h2>
+    <form id="bookingForm" class="form-card">
+        <label for="bookingName">Full Name:</label>
+        <input type="text" id="bookingName" name="bookingName" required>
 
-<p>Ready to get crowned? Book your next hairstyle appointment with us today.</p>
+        <label for="bookingEmail">Email Address:</label>
+        <input type="email" id="bookingEmail" name="bookingEmail" required>
 
-<div class="booking-card">
-    <h3>Booking Information</h3>
+        <label for="bookingService">Choose a Service:</label>
+        <select id="bookingService" name="bookingService" required>
+            <option value="">Select a service</option>
+            <option value="Braiding">Braiding</option>
+            <option value="Wig Install">Wig Install</option>
+            <option value="Hair Treatment">Hair Treatment</option>
+            <option value="Knotless Braids">Knotless Braids</option>
+            <option value="Wash and Blowdry">Wash and Blowdry</option>
+        </select>
 
-    <p>WhatsApp: 071 234 5678</p>
+        <label for="bookingDate">Preferred Date:</label>
+        <input type="date" id="bookingDate" name="bookingDate" required>
 
-    <p>Instagram: @crownedbyyanga</p>
+        <label for="bookingMessage">Extra Message:</label>
+        <textarea id="bookingMessage" name="bookingMessage" rows="4" placeholder="Tell us what style you want..."></textarea>
 
-    <p>Location: Johannesburg</p>
+        <button type="submit" class="btn">Submit Booking Enquiry</button>
 
-    <a href="contact.html" class="btn">Contact Us</a>
-</div>
-
+        <p id="bookingResponse" class="form-response"></p>
+    </form>
 </section>
 
 </main>
+
+<script src="js/script.js"></script>
+
+   
     
 
 
